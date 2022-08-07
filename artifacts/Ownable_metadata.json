@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.8.6+commit.11564f7e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -26,6 +26,32 @@
 			},
 			{
 				"inputs": [],
+				"name": "geUnlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					}
+				],
+				"name": "lock",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -48,11 +74,31 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "newMultisig",
+						"type": "address"
+					}
+				],
+				"name": "setMultisigOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "newOwner",
 						"type": "address"
 					}
 				],
 				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unlock",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -85,9 +131,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts\\ERC20\\LinkDaoPresale.sol": "Ownable"
+			"contracts\\ERC20\\BabyToken_A.sol": "Ownable"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "berlin",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -99,12 +145,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts\\ERC20\\LinkDaoPresale.sol": {
-			"keccak256": "0x2e382b538d72cdd7ef0d25a6e19df7a3a0a51f2abba058866e38d333ffa2291e",
-			"license": "MIT",
+		"contracts\\ERC20\\BabyToken_A.sol": {
+			"keccak256": "0xfdaf54d3c6429106cf987073571ef9ee65bf4903024dd9ad6f30847eee6f27f5",
+			"license": "GPL-3.0-only",
 			"urls": [
-				"bzz-raw://54d8ad9ad892871844450d49c7d1f411f0510d7b1de69667021c187077f86323",
-				"dweb:/ipfs/QmUSUfGLYTMuBhXErJnS8YzwCeSREaNGkNJxDRAyDjykA2"
+				"bzz-raw://81ba82e7002c64aa7b4945b1f2e6983f07e75284488f9143797d63ce5a6543d3",
+				"dweb:/ipfs/QmUQ6MmXiKmqZwyCnQPbkBjdn5xGzGGxjj9i6adWzFm3cR"
 			]
 		}
 	},
