@@ -1,4 +1,4 @@
-# MintCoin半神大人的花式发
+# MintCoin半神大人的花式发币
 
 ### 发行ERC20代币
 - [固定总量代币](./README/ERC20/ERC20FixedSupply.md)
